@@ -1,0 +1,45 @@
+{
+  "name": "mcp-maestro",
+  "version": "0.9.0",
+  "description": "Enhanced MCP tool chainer with improved performance, error handling, caching, connection pooling, and debugging capabilities. Evolution of mcp_tool_chainer_fixed.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index-enhanced.js",
+  "bin": {
+    "mcp-maestro": "./index-enhanced.js"
+  },
+  "scripts": {
+    "start": "node index-enhanced.js",
+    "dev": "node --inspect index-enhanced.js",
+    "test": "node test.js",
+    "clean-cache": "rm -f .mcp_tools_cache.json"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "tool-chaining",
+    "automation",
+    "ai-orchestration"
+  ],
+  "author": "MCP Community",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ManSaint/MCP_Maestro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ManSaint/MCP_Maestro/issues"
+  },
+  "homepage": "https://github.com/ManSaint/MCP_Maestro#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "jsonpath-plus": "^10.3.0",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
